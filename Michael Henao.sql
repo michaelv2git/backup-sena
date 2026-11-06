@@ -14,7 +14,7 @@ CREATE TABLE clientes (
     localidad VARCHAR(40),
     fecha_registro DATE NOT NULL,
     id_referido INT DEFAULT NULL,
-    FOREIGN KEY (id_referido) REFERENCES clientes(id_cliente)
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
 );
 
 CREATE TABLE cuentas (
